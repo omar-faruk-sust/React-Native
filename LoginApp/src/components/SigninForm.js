@@ -15,11 +15,15 @@ export default class SigninForm extends Component {
         <TextInput style={styles.inputBox}
           placeholder='Email'
           placeholderTextColor='#ffffff'
+          selectionColor="#ffffff"
+          keyboardType="email-address"
+          onSubmitEditing={()=> this.password.focus()}
         />
         <TextInput style={styles.inputBox}
           placeholder='Password'
           placeholderTextColor='#ffffff'
           secureTextEntry = {true}
+          selectionColor="#ffffff"
         />
         <View style={{ alignItems: 'center' }}>
           <TouchableOpacity style={styles.button}>
